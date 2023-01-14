@@ -1,29 +1,31 @@
-<div class="relative bg-cover bg-center sm:px-4 py-5 bg-[url('/Hero.jpg')] w-full hero min-h-[60vh]">
-  <div class="absolute inset-0 z-0 bg-gradient-to-b from-orange-900 to-[#8B4000">
-  <div class="px-4 max-w-[1000px] mx-auto h-[650px] flex flex-wrap justifyend items-start pb-[100px] z-1 relative mb-4 flex-col-reverse text-center">
-    <div class="pr-4 pl-4">
+---
+import Crab from "./Crab.astro";
+---
+
+<div class="relative sm:px-4 py-5 w-full min-h-[60vh]">
+  <div class="absolute inset-0 z-0 bg-gradient-to-b from-orange-900 to-[#8B4000]">
+    <div class="px-4 max-w-[1000px] mx-auto h-[650px] flex flex-wrap items-start pb-[100px] relative mb-4 flex-col-reverse text-center">
       <div class="flex flex-col lg:flex-row items-center justify-center gap-4">
         <div>
-          <h1 class="font-extrabold text-3xl sm:text-5xl lg:text-5xl tracking-tight text-left text-white max-w-[600px]">
+          <h1 class="font-extrabold text-3xl sm:text-5xl lg:text-5xl text-left text-white max-w-[600px]">
             <span class="gradientText" style={{backgroundImage: "linear-gradient(45deg, #e64980 0%, #fab005 100%)"}}>Crab Productivity</span> by the Claws
           </h1>
           <p class="mt-6 text-lg text-zinc-200 text-left max-w-3xl mx-auto">
             Don't be shellfish, take control of your tasks with Procrabstinator Stopper
           </p>
           <button class="bg-gray-700 mr-4 border-none text-white font-bold py-4 px-6 text-center rounded-md float-left mt-6 transition duration-500 hover:bg-gray-600">
-            <a target="_blank" rel="noreferrer" href="https://survey.stackoverflow.co/2022/">Download</a>
+            Download
           </button>
           <button class="bg-stone-700 mr-4 border-none text-white font-bold py-4 px-6 text-center rounded-md float-left mt-6 transition duration-500 hover:bg-stone-600">
-          <a class="flex gap-4 items-center" target="_blank" rel="noreferrer" href="https://2022.stateofjs.com/en-US/">
+          <a class="flex gap-4 items-center" href="/">
             Github
             <img src="/github.jpg" width={24} height={24} />
           </a>
           </button>
         </div>
-        <iframe class="mt-6" width="560" height="315" src="https://www.youtube.com/embed/1L2hrG-7i2Y" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+        <Crab />
       </div>
     </div>
-  </div>
   </div>
 </div>
 

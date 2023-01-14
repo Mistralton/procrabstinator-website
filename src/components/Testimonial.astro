@@ -1,0 +1,21 @@
+---
+export interface Props {
+  quote: string
+  imgSource: string
+  quotee: string
+}
+
+const { quote, imgSource, quotee } = Astro.props
+---
+
+<div
+  class="p-4 bg-orange-600 m-4 flex flex-col justify-center relative rounded-lg place-items-center text-sm"
+  >
+  <blockquote class="mb-4">
+    {quote}
+  </blockquote>
+  <div class="flex items-center">
+    <img class="w-24 h-auto" src={imgSource} />
+    <p>{quotee}</p>
+  </div>
+</div>

@@ -1,6 +1,8 @@
 ---
 import Card from "../components/Card.astro";
+import FeatureList from "../components/FeatureList.astro";
 import Hero from "../components/Hero.astro";
+import Testimonial from "../components/Testimonial.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
@@ -9,34 +11,18 @@ import Layout from "../layouts/Layout.astro";
   <div
     class="mb-40 flex flex-col items-center text-center w-full p-4 text-white max-w-5xl"
   >
-    <h2 class="text-3xl font-bold">Make Procrastination a Thing of the Past</h2>
-    <p class="my-4 max-w-lg">
+    <h2 class="text-3xl font-bold max-w-xl">It's time to shelle-brate productivity. Don't let procrastination crab your style.</h2>
+    <p class="mt-4 mb-10 max-w-lg">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget
       dignissim ligula. Pellentesque molestie ut purus at iaculis. Donec in dui
       eu lectus sagittis gravida. Maecenas eget lorem arcu.
     </p>
-    <div class="grid grid-cols-3 gap-4">
-      <Card
-        title="Hello"
-        body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pellentesque molestie tellus sit amet feugiat. Sed fringilla libero eget erat finibus ultrices. Cras faucibus, tortor quis rhoncus porta, metus nisl lacinia mi, non congue sapien velit non lectus. Suspendisse nec velit sit amet urna convallis condimentum."
-        href="/"
-      />
-      <Card
-        title="Hello"
-        body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pellentesque molestie tellus sit amet feugiat. Sed fringilla libero eget erat finibus ultrices. Cras faucibus, tortor quis rhoncus porta, metus nisl lacinia mi, non congue sapien velit non lectus. Suspendisse nec velit sit amet urna convallis condimentum."
-        href="/"
-      />
-      <Card
-        title="Hello"
-        body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pellentesque molestie tellus sit amet feugiat. Sed fringilla libero eget erat finibus ultrices. Cras faucibus, tortor quis rhoncus porta, metus nisl lacinia mi, non congue sapien velit non lectus. Suspendisse nec velit sit amet urna convallis condimentum."
-        href="/"
-      />
-    </div>
+    <FeatureList />
   </div>
 
   <div class="gap-16 mb-20 w-full max-w-5xl flex justify-between text-white">
     <div>
-      <h2 class="text-2xl font-bold">Enter your tasks</h2>
+      <h2 class="text-3xl font-bold mb-4">Track Your Tasks</h2>
       <p>
         Singed drinks a potent brew of chemicals, granting him 30 / 65 / 100
         bonus ability power, armor, magic resist and movement speed along with 6
@@ -46,7 +32,7 @@ import Layout from "../layouts/Layout.astro";
     </div>
     <img
       class="p-4 max-w-lg"
-      src="https://raw.githubusercontent.com/wesngu28/wesngu28.com/master/public/blog/first-post/first-post.jpg"
+      src="https://images.unsplash.com/photo-1484715340216-6e77040b1852?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
     />
   </div>
   <div
@@ -54,10 +40,10 @@ import Layout from "../layouts/Layout.astro";
   >
     <img
       class="p-4 max-w-lg"
-      src="https://raw.githubusercontent.com/wesngu28/wesngu28.com/master/public/blog/first-post/first-post.jpg"
+      src="https://images.unsplash.com/photo-1484715340216-6e77040b1852?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
     />
     <div class="text-left w-full">
-      <h2 class="text-2xl font-bold">Block your Distractions</h2>
+      <h2 class="text-3xl font-bold mb-4">Say No To Distractions</h2>
       <p>
         Singed drinks a potent brew of chemicals, granting him 30 / 65 / 100
         bonus ability power, armor, magic resist and movement speed along with 6
@@ -67,131 +53,24 @@ import Layout from "../layouts/Layout.astro";
     </div>
   </div>
 
-  <div class="grid w-full max-w-5xl grid-cols-5 mb-40">
-    <div
-      class="p-4 bg-[#21222a] m-4 flex flex-col justify-center relative rounded-lg place-items-center"
-    >
-      <div class={`pr-2 pl-2 mb-5`}>
-        <div class="mt-4">
-          <div class="flex justify-between items-center mb-4 w-full">
-            <a target="_blank" href={"/"} rel="noopener noreferrer">
-              <h2 class="hover:underline m-2 text-left font-bold text-2xl">
-                HH
-              </h2>
-            </a>
-            <div class="flex items-center">
-              <a
-                target="_blank"
-                href={"/"}
-                rel="noopener noreferrer"
-                class="text-black md:text-xl hover:underline m-1"
-              >
-              </a>
-            </div>
-          </div>
-          <p class="m-2 h-24 lg:text-sm ultrawide:text-base">ff</p>
-        </div>
-      </div>
-    </div>
-    <div
-      class="p-4 bg-[#21222a] m-4 flex flex-col justify-center relative rounded-lg place-items-center"
-    >
-      <div class={`pr-2 pl-2 mb-5`}>
-        <div class="mt-4">
-          <div class="flex justify-between items-center mb-4 w-full">
-            <a target="_blank" href={"/"} rel="noopener noreferrer">
-              <h2 class="hover:underline m-2 text-left font-bold text-2xl">
-                HH
-              </h2>
-            </a>
-            <div class="flex items-center">
-              <a
-                target="_blank"
-                href={"/"}
-                rel="noopener noreferrer"
-                class="text-black md:text-xl hover:underline m-1"
-              >
-              </a>
-            </div>
-          </div>
-          <p class="m-2 h-24 lg:text-sm ultrawide:text-base">ff</p>
-        </div>
-      </div>
-    </div>
-    <div
-      class="p-4 bg-[#21222a] m-4 flex flex-col justify-center relative rounded-lg place-items-center"
-    >
-      <div class={`pr-2 pl-2 mb-5`}>
-        <div class="mt-4">
-          <div class="flex justify-between items-center mb-4 w-full">
-            <a target="_blank" href={"/"} rel="noopener noreferrer">
-              <h2 class="hover:underline m-2 text-left font-bold text-2xl">
-                HH
-              </h2>
-            </a>
-            <div class="flex items-center">
-              <a
-                target="_blank"
-                href={"/"}
-                rel="noopener noreferrer"
-                class="text-black md:text-xl hover:underline m-1"
-              >
-              </a>
-            </div>
-          </div>
-          <p class="m-2 h-24 lg:text-sm ultrawide:text-base">ff</p>
-        </div>
-      </div>
-    </div>
-    <div
-      class="p-4 bg-[#21222a] m-4 flex flex-col justify-center relative rounded-lg place-items-center"
-    >
-      <div class={`pr-2 pl-2 mb-5`}>
-        <div class="mt-4">
-          <div class="flex justify-between items-center mb-4 w-full">
-            <a target="_blank" href={"/"} rel="noopener noreferrer">
-              <h2 class="hover:underline m-2 text-left font-bold text-2xl">
-                HH
-              </h2>
-            </a>
-            <div class="flex items-center">
-              <a
-                target="_blank"
-                href={"/"}
-                rel="noopener noreferrer"
-                class="text-black md:text-xl hover:underline m-1"
-              >
-              </a>
-            </div>
-          </div>
-          <p class="m-2 h-24 lg:text-sm ultrawide:text-base">ff</p>
-        </div>
-      </div>
-    </div>
-    <div
-      class="p-4 bg-[#21222a] m-4 flex flex-col justify-center relative rounded-lg place-items-center"
-    >
-      <div class={`pr-2 pl-2 mb-5`}>
-        <div class="mt-4">
-          <div class="flex justify-between items-center mb-4 w-full">
-            <a target="_blank" href={"/"} rel="noopener noreferrer">
-              <h2 class="hover:underline m-2 text-left font-bold text-2xl">
-                HH
-              </h2>
-            </a>
-            <div class="flex items-center">
-              <a
-                target="_blank"
-                href={"/"}
-                rel="noopener noreferrer"
-                class="text-black md:text-xl hover:underline m-1"
-              >
-              </a>
-            </div>
-          </div>
-          <p class="m-2 h-24 lg:text-sm ultrawide:text-base">ff</p>
-        </div>
-      </div>
-    </div>
+  <div class="grid w-full max-w-5xl grid-cols-3 pb-0">
+    <Testimonial
+      quote="Never been a day in my life where I don't think about Procrabstinator."
+      imgSource="/Crabriel.png"
+      quotee="Crabriel Iglesias"
+    />
+    <Testimonial
+      quote="Never been a day in my life where I don't think about Procrabstinator."
+      imgSource="/Crabriel.png"
+      quotee="Crabriel Iglesias"
+    />
+    <Testimonial
+      quote="Never been a day in my life where I don't think about Procrabstinator."
+      imgSource="/Crabriel.png"
+      quotee="Crabriel Iglesias"
+    />
+  </div>
+  <div class="h-40 bg-gradient-to-b from-[#8B4000] to-orange-900 w-full">
+
   </div>
 </Layout>
