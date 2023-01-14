@@ -9,13 +9,13 @@ const { quote, imgSource, quotee } = Astro.props
 ---
 
 <div
-  class="p-4 bg-orange-600 m-4 flex flex-col justify-center relative rounded-lg place-items-center text-sm"
+  class="p-4 bg-orange-600 m-4 flex flex-col justify-center pb-20 relative rounded-lg place-items-center text-sm"
   >
   <blockquote class="mb-4">
     {quote}
   </blockquote>
-  <div class="flex items-center">
-    <img class="w-24 h-auto" src={imgSource} />
+  <div class="absolute bottom-3 flex items-center">
+    <img class="w-24 h-[64px]" src={imgSource} />
     <p>{quotee}</p>
   </div>
 </div>
