@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "",
+  "version": "1.0.0",
+  "description": "",
+  "action": {
+    "default_icon": "assets/icon.png",
+    "default_popup": "index.html"
+  },
+  "icons": {},
+  "background": {
+    "service_worker": "index.js"
+},
+"permissions": [
+    "tabs"
+ ]
+}

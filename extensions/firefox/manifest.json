@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "name": "Procrabstinator",
+  "description": "Stop procrastinating",
+  "version": "0.0.1",
+  "icons": {},
+  "permissions": ["tabs"],
+  "background": {
+    "scripts": ["index.js"]
+  },
+  "content_scripts": [],
+  "browser_action": {
+    "default_icon": {}
+  }
+}
