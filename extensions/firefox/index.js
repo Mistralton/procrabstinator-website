@@ -1,4 +1,5 @@
 setInterval(getAllTabs, 10000);
+let tabOpened = false;
 
 async function logTabs(tabs) {
   let tabArr = []
@@ -10,9 +11,15 @@ async function logTabs(tabs) {
     mode: 'cors',
     body: JSON.stringify(tabArr),
   })
-  console.log(testFetch)
-  const testFetchJson = await testFetch.json()
-  console.log(testFetchJson)
+
+  const testFetchJson = await testFetch.text()
+  if(JSON.parse(testFetchJson).length > 0 && !tabOpened) {
+    chrome.tabs.create({url:"index.html"});
+    tabOpened = true;
+    setTimeout(() => {
+      tabOpened = false;
+    }, 21600000);
+  }
 }
 
 function onError(error) {

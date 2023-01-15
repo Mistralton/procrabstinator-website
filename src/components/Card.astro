@@ -2,19 +2,16 @@
 export interface Props {
 	title: string;
 	body: string;
-	href: string;
 }
 
-const { href, title, body } = Astro.props;
+const { title, body } = Astro.props;
 ---
 
-<div class="p-4 text-left border border-orange-400 shadow">
-	<a href={href}>
-		<h2 class="mb-4">
-			{title}
-		</h2>
-		<p>
-			{body}
-		</p>
-	</a>
+<div class="md:m-0 m-4 p-4 text-left border border-orange-400 shadow">
+	<h2 class="mb-4">
+		{title}
+	</h2>
+	<p>
+		{body}
+	</p>
 </div>
