@@ -1,31 +1,26 @@
 ---
 import Crab from "./Crab.astro";
 ---
-
-<div class="relative sm:px-4 py-5 w-full min-h-[50vh] md:min-h-[60vh]">
-  <div class="absolute inset-0 z-0 bg-gradient-to-b from-orange-900 to-[#8B4000]">
-    <div class="px-4 max-w-[1000px] mx-auto h-[600px] md:h-[750px] lg:h-[650px] flex flex-wrap lg:items-start pb-[100px] relative mb-4 flex-col-reverse text-center">
-      <div class="flex flex-col lg:flex-row items-center justify-center gap-4">
-        <div class="mb-8 lg:m-0">
-          <h1 class="font-extrabold text-4xl lg:text-5xl text-left text-white max-w-[600px]">
-            <span class="gradientText" style={{backgroundImage: "linear-gradient(45deg, #e64980 0%, #fab005 100%)"}}>Crab Productivity</span> by the Claws
-          </h1>
-          <p class="mt-6 text-base md:text-lg text-zinc-200 text-left max-w-3xl mx-auto">
-            Don't be shellfish, take control of your tasks with Procrabstinator Stopper
-          </p>
-          <button class="bg-gray-700 mr-4 border-none text-white font-bold py-4 px-6 text-center rounded-md float-left mt-6 transition duration-500 hover:bg-gray-600">
-            Download
-          </button>
-          <button class="bg-stone-700 mr-4 border-none text-white font-bold py-4 px-6 text-center rounded-md float-left mt-6 transition duration-500 hover:bg-stone-600">
-            <a class="flex gap-4 items-center" href="https://github.com/Mistralton/procrabstinator" target="_blank" rel="noreferrer">
-            Github
-            <img src="/github.jpg" width={24} height={24} />
-          </a>
-          </button>
-        </div>
-        <Crab />
-      </div>
+<div class="bg-gradient-to-b from-orange-900 to-[#8B4000] w-full flex items-center justify-center">
+  <div class="sm:px-4 py-5 max-w-[1000px] flex flex-col lg:flex-row justify-center items-center gap-16 mb-48 z-0 mt-40">
+    <div class="z-0 p-4">
+      <h1 class="font-extrabold text-4xl lg:text-5xl text-left text-white max-w-[600px]">
+        <span class="gradientText" style={{backgroundImage: "linear-gradient(45deg, #e64980 0%, #fab005 100%)"}}>Crab Productivity</span> by the Claws
+      </h1>
+      <p class="mt-6 text-base md:text-lg text-zinc-200 text-left max-w-3xl mx-auto">
+        Don't be shellfish, take control of your tasks with Procrabstinator Stopper
+      </p>
+      <button class="bg-gray-700 mr-4 border-none text-white font-bold py-4 px-6 text-center rounded-md float-left mt-6 transition duration-500 hover:bg-gray-600">
+        Download
+      </button>
+      <button class="bg-stone-700 mr-4 border-none text-white font-bold py-4 px-6 text-center rounded-md float-left mt-6 transition duration-500 hover:bg-stone-600">
+        <a class="flex gap-4 items-center" href="https://github.com/Mistralton/procrabstinator" target="_blank" rel="noreferrer">
+        Github
+        <img src="/github.jpg" width={24} height={24} />
+      </a>
+      </button>
     </div>
+    <Crab />
   </div>
 </div>
 
